@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Rounded Elegance';
+    src: url("../fonts/rounded-elegance.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Bakery';
+    src: url("../fonts/bakery.otf")
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: scroll;
+    font-family: "Rounded Elegance", sans-serif;
+}
+
+
+footer,
+footer p{
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    text-align: center;
+}
+
+h1{
+    font-family: "Rounded Elegance", sans-serif;
+    padding: 2.5rem 0 0 2.5rem;
+    font-weight: bold;
+}
+
+/*white background to sections*/
+.section{
+    background: white;
+}
+
+/*add navbar color*/
+.navbar{
+    background: #EFEFEF !important;
+}
+.brand{
+    font-family:"Rounded Elegance", sans-serif;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-family: "Rounded Elegance", sans-serif;
+    color: #000000 !important;
+    transition: .3s all ease-in;
+}
+.navbar-brand:hover{
+    color: #8E8E8E !important;
+    cursor: pointer;
+}
+
+/*intro screen*/
+.intro{
+    margin: 1.25rem;
+}
+.my-photo{
+    width: 100%;
+    height: 100%;
+    max-width: 21%;
+    margin: -50px;
+    opacity:0;
+    -moz-transition: opacity 1s; /* Firefox 4 */
+    -webkit-transition: opacity 1s; /* Safari and Chrome */
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.my-name{
+    font: 2.4rem "Rounded Elegance", sans-serif;
+    font-weight: bold;
+    color: #515151;
+}
+h2,
+h6{
+    top: 50px;
+    margin: 10px;
+}
+.col-sm-3{
+    bottom: -50px;
+}
+
+/*work screen*/
+.work{
+
+}
+.intro-work{
+    padding: .5rem 0 0 2.5rem;
+}
+.grid{
+    padding: 0 2rem;
+}
+.project-thumbnail{
+    margin-left:0;
+    padding-left: 0;
+}
+.quote{
+    font-family: "Rounded Elegance", sans-serif;
+    color: #515151;
+    padding:  0 0;
+    line-height: 5rem;
+    margin: 20px;
+}
+.download-resume,
+.download-resume a{
+    font-family: "Rounded Elegance", sans-serif;
+    border: 3px solid #515151;
+    border-radius: 8px;
+    background: none;
+    color: #515151 !important;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+.download-resume:hover,
+.download-resume a:hover{
+    background: #8E8E8E;
+    border-color: #8E8E8E;
+    color: white !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+#carousel {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*skills screen*/
+.skills{
+    padding: 0 2rem;
+}
+.intro-skills{
+    padding: .5rem 0 0 1.25rem;
+}
+.icon{
+    width: 100%;
+    max-width: 2.5rem;
+    margin-right: 0.75rem;
+}
+.card-title{
+    line-height: 2.7rem;
+}
+
+#c-sharp,
+#jquery,
+#adobe-illustrator,
+#sql{
+    background-color: #2d2d2d;
+}
+
+#oop,
+#html-and-css,
+#adobe-photoshop{
+    background-color:
+            #595959;
+}
+
+#asp-net-mvc,
+#javascript,
+#balsamiq{
+    background-color: #494949;
+}
+.card-deck{
+    margin-top: 2rem;
+}
+
+/*contacts screen*/
+.contact{
+    padding: 0 2rem;
+}
+.social-icons{
+    padding: 0.75rem 0 0 1rem;
+}
+.fa-contact-screen{
+    color: #000000;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .3s all ease-in;
+}
+.fa-contact-screen:hover{
+    color: #8E8E8E;
+    cursor: pointer;
+}
+.goodbye-message{
+    padding: 8rem 0 0 1.25rem;
+}
+.insta-title{
+    letter-spacing: 5px;
+}
+.signature{
+    position: absolute;
+    opacity: .3;
+    width: 275%;
+    top: 2.5rem;
+    left: -15rem;
+}

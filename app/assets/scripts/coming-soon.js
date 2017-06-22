@@ -1,3 +1,7 @@
-/**
- * Created by MirelaDamyanova on 21-Jun-17.
- */
+$(document).ready(function() {
+    $(".element").typed({
+        strings: ["Coming soon!"],
+        typeSpeed: 5,
+        showCursor: true
+    });
+});
