@@ -20,17 +20,14 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
 pre{
     color: white;
 }
-
 .wrapper{
-    background: #494949; !important;
-    color: white;
+    background: white; !important;
+    color: #494949;
     height: 100vh;
 }
-
 .element{
     font-family: "Rounded Elegance", sans-serif;
 }

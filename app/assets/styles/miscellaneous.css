@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Rounded Elegance';
+    src: url("../fonts/rounded-elegance.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'Bakery';
+    src: url("../fonts/bakery.otf")
+}
+@font-face {
+    font-family: 'that i love you';
+    src: url("../fonts/that i love you - TTF.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    min-height: 100%;
+}
+body{
+    height: 100%;
+    overflow: scroll;
+    font-family: "Rounded Elegance", sans-serif;
+}
+footer,
+footer p{
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    text-align: center;
+}
+h1{
+    font-family: "Rounded Elegance", sans-serif;
+    padding: 2.5rem 0 0 2.5rem;
+}
+
+/*add navbar color*/
+.navbar{
+    background: #EFEFEF !important;
+}
+.brand{
+    font-family:"Rounded Elegance", sans-serif;
+}
+.hearts{
+    font: 2.0rem "that i love you", sans-serif;
+}
+.navbar-brand{
+    font-family: "Rounded Elegance", sans-serif;
+    color: #1E1E1E !important;
+    transition: .3s all ease-in;
+}
+.navbar-brand:hover{
+    color: #8E8E8E !important;
+    cursor: pointer;
+}
+.description-p{
+    padding: .5rem 0 0 2.5rem;
+}
+.grid{
+    margin-bottom: 5rem;
+}
