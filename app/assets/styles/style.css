@@ -102,7 +102,10 @@ h6{
 .intro-experience{
     padding: .5rem 0 0 2.5rem;
 }
-
+/*change padding because of quote*/
+.experience-column{
+    bottom: -20px;
+}
 .grid{
     padding: 0 2rem;
 }
@@ -114,9 +117,8 @@ h6{
     font-family: "Rounded Elegance", sans-serif;
     font-size: 35px;
     color: #515151;
-    padding:  0 0;
-    line-height: 4rem;
-    margin: 10px;
+    line-height: 50px;
+
 }
 .download-resume,
 .download-resume a{
