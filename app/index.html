@@ -6,7 +6,7 @@
     <title>ella</title>
 
     <!--normalize.css-->
-    <link rel="stylesheet" href="./vendors/normalize/normalize.css">
+    <link rel="stylesheet" href="vendors/normalize/normalize.css">
 
     <!-- atest compiled and minified CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--pagepiling.js-->
-    <link rel="stylesheet" type="text/css" href="./vendors/page-piling/jquery-pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/page-piling/jquery-pagepiling.css" />
 
     <!--styling-->
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 
     <!--image hover gallery style-->
-    <link rel="stylesheet" href="./assets/styles/images-gallery.css">
+    <link rel="stylesheet" href="assets/styles/images-gallery.css">
 
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -40,7 +40,7 @@
             crossorigin="anonymous"></script>
 
     <!--pagepiling minified JavaScript-->
-    <script type="text/javascript" src="./vendors/page-piling/jquery-pagepiling.min.js"></script>
+    <script type="text/javascript" src="vendors/page-piling/jquery-pagepiling.min.js"></script>
 
     <!--instagram light widget script-->
     <script src="//lightwidget.com/widgets/lightwidget.js"></script>
@@ -83,6 +83,11 @@
                     <i class="fa fa-envelope-o" aria-hidden="false"></i>
                 </a>
             </li>
+            <li class="nav-item">
+                <a  class="nav-link" href="bg/index.html">
+                    <i class="fa fa-language" aria-hidden="true"></i>
+                </a>
+            </li>
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
@@ -95,13 +100,13 @@
             <div class="intro">
                 <div class="row">
                     <img onload="this.style.opacity='1';"
-                         src="./assets/images/me/my-photo.jpg" alt="" class="my-photo img-fluid mx-auto d-block">
+                         src="assets/images/me/my-photo.jpg" alt="" class="my-photo img-fluid mx-auto d-block">
                 </div>
                 <div class="row">
                     <h2 class="container-fluid">Hi, my name is <span class="my-name">Mirela</span></h2>
                 </div>
                 <div class="row">
-                    <h6 class="container-fluid">The creator of <span class="brand">ella</span>, bulgarian girl,
+                    <h6 class="container-fluid">the creator of <span class="brand">ella</span>, bulgarian girl,
                         programmer, dreamer</h6>
                 </div>
             </div>
@@ -116,7 +121,7 @@
                 <div class="col-sm-3">
                     <p>I also have some goals -
                         understanding UI/UX/graphic design, expand my knowledge in front-end development, JavaScript,
-                        Adobe Illustrator, Photoshop.
+                        Adobe Illustrator, Adobe Photoshop.
                     </p>
                 </div>
             </div>
@@ -130,15 +135,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 experience-column">
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 experience-column">
                     <p>
                        For my two years of studying at SoftUni, I have made a couple of projects with different teams.
-                        We have used very different technologies and we learned a lot of stuff.
+                        We used very different technologies and we learned a lot of stuff.
                     </p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 experience-column">
                     <p>
                         Currently on one side I'm studying Web Development with C# and on other side I'm self-learning
                         design (graphic design, UI/UX design).
@@ -151,8 +156,7 @@
                     It's logic-based creativity."<br>
                     -John Romero</p>
             </div>
-            <!--TODO Add my resume-->
-            <a target="_blank" class="btn btn-primary download-resume" href="#">resume</a>
+            <a target="_blank" class="btn btn-primary download-resume" href="https://drive.google.com/file/d/0BxUVE36yt3lDVFVJRlExYTRMOXc/view?usp=sharing">resume</a>
         </div>
 
         <div class="experience-grid section">
@@ -167,10 +171,10 @@
                     databases advanced feb 2017 - everyday journal-->
                     <div class="col col-sm-3 project-box">
                         <div class="hovereffect">
-                            <img class="img-fluid project-thumbnail" src="./assets/images/projects/bYte-me-background-square.jpg" alt="softuni projects">
+                            <img class="img-fluid project-thumbnail" src="assets/images/projects/bYte-me-background-square.jpg" alt="softuni projects">
                             <div class="overlay">
                                 <h2>softuni projects</h2>
-                                <a class="info" href="./softuni-projects.html">view</a>
+                                <a class="info" href="softuni-projects.html">view</a>
                             </div>
                         </div>
                     </div>
@@ -180,10 +184,10 @@
                     -->
                     <div class="col-sm-3 project-box">
                         <div class="hovereffect">
-                            <img class="img-fluid project-thumbnail" src="./assets/images/projects/tatkos-static-blog-background-square.png" alt="self-made">
+                            <img class="img-fluid project-thumbnail" src="assets/images/projects/tatkos-static-blog-background-square.png" alt="self-made projects">
                             <div class="overlay">
-                                <h2>self-made</h2>
-                                <a class="info" href="./self-made-projects.html">view</a>
+                                <h2>self-made projects</h2>
+                                <a class="info" href="self-made-projects.html">view</a>
                             </div>
                         </div>
                     </div>
@@ -191,10 +195,10 @@
                     <!--coming soon - doodles-->
                     <div class="col-sm-3 project-box">
                         <div class="hovereffect">
-                            <img class="img-fluid project-thumbnail" src="./assets/images/projects/coming-soon.jpg" alt="doodles">
+                            <img class="img-fluid project-thumbnail" src="assets/images/projects/coming-soon.jpg" alt="doodles">
                             <div class="overlay">
                                 <h2>doodles</h2>
-                                <a class="info" href="./doodles.html">view</a>
+                                <a class="info" href="doodles.html">view</a>
                             </div>
                         </div>
                     </div>
@@ -202,10 +206,10 @@
                     <!--coming soon - ui/ux design-->
                     <div class="col col-sm-3 project-box">
                         <div class="hovereffect">
-                            <img class="img-fluid project-thumbnail" src="./assets/images/projects/coming-soon.jpg" alt="ui/ux design">
+                            <img class="img-fluid project-thumbnail" src="assets/images/projects/coming-soon.jpg" alt="ui/ux design">
                             <div class="overlay">
                                 <h2>ui/ux design</h2>
-                                <a class="info" href="./ui-ux.html">view</a>
+                                <a class="info" href="ui-ux.html">view</a>
                             </div>
                         </div>
                     </div>
@@ -222,16 +226,16 @@
             <div id="carousel" class="col-xs-12 grid-small carousel slide hidden-sm-up" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="./assets/images/projects/bYte-me-background-square.jpg" alt="softuni projects">
+                        <img class="d-block img-fluid" src="assets/images/projects/bYte-me-background-square.jpg" alt="softuni projects">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="./assets/images/projects/tatkos-static-blog-background-square.png" alt="self-made">
+                        <img class="d-block img-fluid" src="assets/images/projects/tatkos-static-blog-background-square.png" alt="self-made">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="./assets/images/projects/coming-soon.jpg" alt="doodles">
+                        <img class="d-block img-fluid" src="assets/images/projects/coming-soon.jpg" alt="doodles">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="./assets/images/projects/coming-soon.jpg" alt="ui/ux design">
+                        <img class="d-block img-fluid" src="assets/images/projects/coming-soon.jpg" alt="ui/ux design">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -272,7 +276,7 @@
             <div class="card-deck hidden-xs-down">
                 <div class="card">
                     <div class="card-block">
-                        <img src="./assets/images/icons/back-end-icon.png" alt="back-end icon" class="float-left img-fluid icon">
+                        <img src="assets/images/icons/back-end-icon.png" alt="back-end icon" class="float-left img-fluid icon">
                         <h4 class="card-title">back-end</h4>
                         <span class="skill-title">C#</span>
                         <div class="progress">
@@ -423,7 +427,7 @@
                             <h2 >Bye, bye!</h2>
                         </div>
                         <div class="col-4">
-                            <img src="./assets/images/me/signature-1.png" alt="signature" class="signature">
+                            <img src="assets/images/me/signature-1.png" alt="signature" class="signature">
                         </div>
                     </div>
                 </div>

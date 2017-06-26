@@ -6,7 +6,7 @@
     <title>ella</title>
 
     <!--normalize.css-->
-    <link rel="stylesheet" href="./vendors/normalize/normalize.css">
+    <link rel="stylesheet" href="vendors/normalize/normalize.css">
 
     <!--latest compiled and minified CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--pagepiling.js-->
-    <link rel="stylesheet" type="text/css" href="./vendors/page-piling/jquery-pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/page-piling/jquery-pagepiling.css" />
 
     <!--styling-->
-    <link rel="stylesheet" href="./assets/styles/project.css">
+    <link rel="stylesheet" href="assets/styles/project.css">
 
     <!--styling-->
-    <link rel="stylesheet" href="./assets/styles/self-made-projects.css">
+    <link rel="stylesheet" href="assets/styles/self-made-projects.css">
 
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -40,7 +40,7 @@
             crossorigin="anonymous"></script>
 
     <!--pagepiling minified JavaScript-->
-    <script type="text/javascript" src="./vendors/PagePiling/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="vendors/page-piling/jquery-pagepiling.min.js"></script>
 
     <!--instagram widget script-->
     <script src="//lightwidget.com/widgets/lightwidget.js"></script>
@@ -81,91 +81,108 @@
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 </a>
             </li>
+            <li class="nav-item">
+                <a  class="nav-link" href="bg/self-made-projects.html">
+                    <i class="fa fa-language" aria-hidden="true"></i>
+                </a>
+            </li>
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
 <main>
     <div class="container-fluid">
-        <div class="intro">
-            <h1>self-made projects</h1>
-
-            <div class="row intro-project">
-                <div class="col-sm-4">
+        <div class="row">
+            <div class="col text-center">
+                <h1>self-made projects</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-9">
                     <p>
-                        Intro for projects here.
+                        Meanwhile, while I was studying, I've made three simple projects, using different technologies.
                     </p>
                 </div>
-
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <p>
-                        Continue intro for projects.
+
                     </p>
                 </div>
             </div>
 
             <div class="container-fluid row image-feature">
             </div>
-
         </div>
-
-        <div class="research">
-            <h3>contribution</h3>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h3>projects</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <b>Habibi Player</b> is really simple MP3 player made with Windows Forms. <b>Catch Me a Beer</b> is
+                    Unity 3D game where for given time you must catch falling bottles with beer and be careful to not
+                    catch water.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <b>Tatko's Static Blog</b> is a thematic static blog where you can find blog posts from Tatko. You can also register
+                    and write your own posts. I've made this blog during my Software Technologies course, using HTML
+                    and CSS.
+                </p>
+            </div>
+        </div>
             <div class="row intro-project">
-                <div class="col-sm-5">
-                    <p>
-                        Tell my contribution for evey project.
-                    </p>
-
-                    <p>contribution</p>
-
-                    <ul class="list-contribution">
+                <div class="col-sm-9">
+                    <ul class="list-projects">
                         <li>
-                            for each project tell what I did
+                           January 2016 - Habibi Player
                         </li>
                         <li>
-                            for each project tell what I did
+                            Unity 3D February 2016 - Catch Me a Beer
+                        </li>
+                        <li>
+                            Software Technologies June 2016 - Tatko's Static Blog
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="sketches">
+        <div class="images">
+            <h3></h3>
             <div class="img-fluid"></div>
             <div class="row no-gutters">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="hovereffect">
-                        <img src="./assets/images/projects/catch-me-a-beer-1.png" alt="catch me a beer" class="img-fluid">
+                        <img src="assets/images/projects/habibi-player-2.jpg" alt="habibi player" class="img-fluid">
+                        <div class="overlay">
+                            <h2>habibi player</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="hovereffect">
+                        <img src="assets/images/projects/catch-me-a-beer-2.png" alt="catch me a beer" class="img-fluid">
                         <div class="overlay">
                             <h2>catch me a beer</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="./assets/images/projects/catch-me-a-beer-2.png" alt="catch me a beer" class="img-fluid">
-                        <div class="overlay">
-                            <h2>catch me a beer</h2>
+                    <div class="col-sm-4">
+                        <div class="hovereffect">
+                            <img src="assets/images/projects/tatkos-static-blog-1.png" alt="tatko's static blog" class="img-fluid">
+                            <div class="overlay">
+                                <h2>tatko's static blog</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="./assets/images/projects/tatkos-static-blog-1.png" alt="tatko's static blog" class="img-fluid">
-                        <div class="overlay">
-                            <h2>tatko's static blog</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="./assets/images/projects/tatkos-static-blog-2.png" alt="tatko's static blog" class="img-fluid">
-                        <div class="overlay">
-                            <h2>tatko's static blog</h2>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
