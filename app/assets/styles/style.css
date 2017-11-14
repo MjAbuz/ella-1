@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Rounded Elegance';
-    src: url("../fonts/rounded-elegance.ttf") format("opentype");
+    font-family: 'Evolventa-Regular';
+    src: url("../fonts/Evolventa-Regular.ttf") format("opentype");
 }
 
 @font-face {
@@ -22,7 +22,7 @@ html{
 body {
     height: 100%;
     overflow: scroll;
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
 }
 footer,
 footer p{
@@ -34,7 +34,7 @@ footer p{
     text-align: center;
 }
 h1{
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
     padding: 2.5rem 0 0 2.5rem;
     text-align: center;
 }
@@ -47,14 +47,14 @@ h1{
     background: #EFEFEF !important;
 }
 .brand{
-    font-family:"Rounded Elegance", sans-serif;
+    font-family:"Evolventa-Regular", sans-serif;
     font-weight: bold;
 }
 .hearts{
     font: 2.0rem "that i love you", sans-serif;
 }
 .navbar-brand{
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
     color: #1E1E1E !important;
     transition: .3s all ease-in;
 }
@@ -80,7 +80,7 @@ h1{
 
 }
 .my-name{
-    font: 2.4rem "Rounded Elegance", sans-serif;
+    font: 2.4rem "Evolventa-Regular", sans-serif;
     font-weight: bold;
     color: #515151;
 }
@@ -114,7 +114,7 @@ h6{
     padding-left: 0;
 }
 .quote{
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
     font-size: 35px;
     color: #515151;
     line-height: 50px;
@@ -122,7 +122,7 @@ h6{
 }
 .download-resume,
 .download-resume a{
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
     border: 3px solid #515151;
     border-radius: 8px;
     background: none;
@@ -147,7 +147,7 @@ h6{
 
 /*skills screen*/
 .skills{
-    padding: 0 2rem;
+    top: -10px;
 }
 .intro-skills{
     padding: .5rem 0 0 1.25rem;
@@ -185,7 +185,8 @@ h6{
     padding: 0 2rem;
 }
 .social-icons{
-    padding: 0.75rem 0 0 1rem;
+    top: 20px;
+
 }
 .fa-contact-screen{
     color: #1E1E1E;

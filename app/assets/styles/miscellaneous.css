@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Rounded Elegance';
-    src: url("../fonts/rounded-elegance.ttf") format("opentype");
+    font-family: 'Evolventa-Regular';
+    src: url("../fonts/Evolventa-Regular.ttf") format("opentype");
 }
 @font-face {
     font-family: 'Bakery';
@@ -21,7 +21,7 @@ html{
 body{
     height: 100%;
     overflow: scroll;
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
 }
 footer,
 footer p{
@@ -33,7 +33,7 @@ footer p{
     text-align: center;
 }
 h1{
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
     padding: 2.5rem 0 0 2.5rem;
 }
 
@@ -42,13 +42,13 @@ h1{
     background: #EFEFEF !important;
 }
 .brand{
-    font-family:"Rounded Elegance", sans-serif;
+    font-family:"Evolventa-Regular", sans-serif;
 }
 .hearts{
     font: 2.0rem "that i love you", sans-serif;
 }
 .navbar-brand{
-    font-family: "Rounded Elegance", sans-serif;
+    font-family: "Evolventa-Regular", sans-serif;
     color: #1E1E1E !important;
     transition: .3s all ease-in;
 }
