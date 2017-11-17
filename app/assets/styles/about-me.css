@@ -1,92 +1,19 @@
-@font-face {
-    font-family: 'Evolventa-Regular';
-    src: url("../fonts/Evolventa-Regular.ttf") format("opentype");
-}
-@font-face {
-    font-family: 'Bakery';
-    src: url("../fonts/bakery.otf")
-}
-@font-face {
-    font-family: 'that i love you';
-    src: url("../fonts/that i love you - TTF.ttf");
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-html{
-    height: 100%;
-    min-height: 100%;
-}
-body{
-    height: 100%;
-    overflow: scroll;
-    font-family: "Evolventa-Regular", sans-serif;
-}
-
-footer,
-footer p{
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    margin-top: -3em;
-    text-align: center;
-}
-
-/*add navbar color*/
-.navbar{
-    background: #EFEFEF !important;
-}
-.brand{
-    font-family:"Evolventa-Regular", sans-serif;
-    font-weight: bold;
-}
-.hearts{
-    font: 2.0rem "that i love you", sans-serif;
-}
-.navbar-brand{
-    font-family: "Evolventa-Regular", sans-serif;
-    color: #1E1E1E !important;
-    transition: .3s all ease-in;
-}
-.navbar-brand:hover{
-    color: #8E8E8E !important;
-    cursor: pointer;
-}
 .big-photo{
     width: 150%;
     max-width: 800px;
     padding-left: 100px;
-    padding-bottom: 300px;
     padding-top: 100px;
-}
-.title-intro{
-    margin: 2.5rem;
-    letter-spacing: 2px;
 }
 .keywords{
     font-family: "Evolventa-Regular", sans-serif;
     padding: 1rem 0;
 }
-.name{
-    font-weight: bold;
-    color: #515151;
+.list{
+    padding-bottom: 40px;
 }
-.social-icons{
-    padding: 0.75rem 0 0 1rem;
-}
-.fa-contact-screen{
-    color: #000000;
-    padding:1.25rem 1.5rem 0 0;
-    border-radius: 50%;
-    transition: .3s all ease-in;
-}
-.fa-contact-screen:hover{
-    color: #8E8E8E;
-    cursor: pointer;
-}
-ol{
-    padding-left: 0;
-    margin-left: 13px;
+.image-feature-about-me{
+    background: url("../images/me/my-sexy-photo-another-one-cutted.jpg") no-repeat fixed;
+    height: 24rem;
+    position: static;
+    background-size: cover;
 }

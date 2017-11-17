@@ -2,243 +2,214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ella</title>
-
-    <!--normalize.css-->
-    <link rel="stylesheet" href="vendors/normalize/normalize.css">
-
-    <!--latest compiled and minified CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-          crossorigin="anonymous">
-
-    <!--font awesome for contact icons-->
+    <link rel="stylesheet" href="gadgets/normalize/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--pagepiling.js-->
-    <link rel="stylesheet" type="text/css" href="vendors/page-piling/jquery-pagepiling.css" />
-
-    <!--styling-->
-    <link rel="stylesheet" href="assets/styles/project.css">
-
-    <!--styling-->
+    <link rel="stylesheet" href="gadgets/aos/dist/aos.css" />
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/images-gallery.css">
     <link rel="stylesheet" href="assets/styles/softuni-projects.css">
+    <link rel="stylesheet" href="gadgets/scrolling-nav/css/scrolling-nav.css">
 </head>
 <body>
-<nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded" id="target-nav">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded" id="nav-bar-ella">
 
-    <!--nice grouped look for mobile screen-->
+    <!--collapse the nav-bar for small screens-->
     <div class="navbar-header">
+
+        <a class="navbar-brand" href="index.html">ella<span class="hearts">*</span></a>
+
         <button class="navbar-toggler navbar-toggler-right"
-                type="button" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-                aria-controls="navbarNav"
+                type="button"
+                data-toggle="collapse"
+                data-target="#nav-bar-items"
+                aria-controls="nav-bar-items"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">ella<span class="hearts">*</span></a>
     </div>
 
-    <div class="collapse navbar-collapse justify-content-end" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="about-me.html">about me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="miscellaneous.html">miscellaneous</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" target="_blank" href="http://github.com/mdamyanova">github</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="mailto:mdamyanova181@gmail.com">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a  class="nav-link" href="bg/softuni-projects.html">
-                    <i class="fa fa-language" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
-</nav>
-<main>
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col text-center">
-            <h1>softuni projects</h1>
+        <!--the actual nav-bar-->
+        <div class="collapse navbar-collapse justify-content-end" id="nav-bar-items">
+            <ul class="nav navbar-nav navbar-small">
+                <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="http://github.com/mdamyanova">github</a></li>
+                <li class="nav-item"><a class="nav-link" href="mailto:mdamyanova181@gmail.com"><i class="fa fa-envelope-o" aria-hidden="false"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-language" aria-hidden="true"></i></a></li>
+            </ul>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-        </div>
-        <div class="col-sm-3">
-            <p>
-                I've contributed in 11 different projects with different teams, using different technologies.
-            </p>
-        </div>
-        <div class="col-sm-3">
-            <p>
-                Teamwork projects are great way to learn working in team and study fast new things.
-            </p>
-        </div>
-    </div>
+    </nav>
+    <main>
+        <div class="content animated fadeIn">
 
-    <div class="container-fluid row image-feature">
-    </div>
-</div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center">
-                <h3>projects and contribution</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-3">
-                <p>
-                    <b>Jumping Dude</b> is C#-based Windows Forms game, with two heroes: The Dude and the enemy - Sonic.
-                    The goal of the game is to reach the Diamond on the top of the screen by avoiding getting caught by
-                    the enemy. <b>Memory Game</b> is a card-matching game with three themes and levels, which can be
-                    chosen by the user. We used Java and Swing. In <b>Programmer's Dream</b> you can run endlessly and collect
-                    1 and 0 through the Programmer's World. <b>bYte me</b> is a date site for programmers. Every user has profile
-                    with likes and dislikes, and depending on the count of dislikes you can order rewards.
-                    For this project I used C#, APS.NET MVC, Entity Framework, SQL Server, HTML and CSS.
-
-                </p>
-            </div>
-            <div class="col-sm-3">
-                <p>
-                    <b>Tech Talks</b> is JavaScript and ReactJs-based blog, when users can add posts and read other's posts. And finally,
-                    <b>Everyday Journal</b> is an online diary for people who are obsessed with healthy living. They can traverse
-                    through days, write what they've consumed or their tasks for the day. In the <b>Practical Teamwork course</b> I had 3
-                    different small task and 1 project with different teams. We worked with Git and source control systems, we learned how to make a UI Prototyping
-                    for given web application and get to know what are these project tracking tools.
-                </p>
+            <h1 class="title-intro text-center">SoftUni Projects</h1>
+            <div class="col-centered">
+                <p>I've contributed in 11 different projects with different teams, using different technologies.
+                Teamwork projects are great way to learn working in team and study fast new things.</p>
             </div>
         </div>
 
+        <div class="image-feature-softuni-projects">
+        </div>
+
+        <div class="content animated fadeIn">
+            <h3>Projects and Contribution</h3>
             <div class="row intro-project">
-                <div class="col-sm-9">
-                    <ul class="list-contribution">
-                        <li>
-                            <b>The very first! Advanced c# September 2015 - Jumping Dude</b> - <i>functionality of the game</i>
-                        </li>
-                        <li>
-                            <b>Teamwork and Personal Skills - September 2015 - League of Legends article</b> - <i>translating from english and writing
-                            article for League of Legends in bulgarian Wikipedia</i>
-                        </li>
-                        <li>
-                            <b>Java fundamentals October 2015 - Memory Game</b> - <i>design the cards, backgrounds, functionality of the game</i>
-                        </li>
-                        <li>
-                            <b>Unity 3d February 2016 - Programmer's Dream</b> - <i>idea, design and functionality of the Menu Scene</i>
-                        </li>
-                        <li>
-                            <b>Software Technologies June 2016 - bYte me</b> - <i>short story - everything</i>
-                        </li>
-                        <li>
-                            <b>JavaScript Applications November 2016 - Tech Talks</b> - <i>functionality of the non-ReactJs version</i>
-                        </li>
-                        <li>
-                            <b>Databases Advanced February 2017 - Everyday Journal</b> - <i>idea, design and functionality of databases</i>
-                        </li>
-                        <li>
-                            <b>Practical Teamwork September 2017 - >Chatche - Live chat</b> - <i>everything about UI Prototyping</i>; <b>List Processing</b> -
-                            <i>simple project to get to know the project tracking tools, which we decided to make it very OOP</i>
-                        </li>
-                        <li>
-                            <b>C# MVC Frameworks - ASP.NET Core - October 2017 - TODO: Self-made project</b>
-                        </li>
-                    </ul>
+            <div class="col-centered">
+                <ul class="list-contribution">
+                    <li>
+                        <b>The very first! Advanced C# September 2015 -
+                            <a href="https://github.com/ivaylo-stavrev/Climb_and_grab_the_star" class="link" target="_blank">Jumping Dude</a>
+                        </b>
+                        - functionality of the game
+                    </li>
+                    <li>
+                        <b>Teamwork and Personal Skills - September 2015 -
+                            <a href="https://bg.wikipedia.org/wiki/League_of_Legends" class="link" target="_blank">League of Legends article</a>
+                        </b>
+                        - translating from english and writing
+                        article for League of Legends in bulgarian Wikipedia
+                    </li>
+                    <li>
+                        <b>Java fundamentals October 2015 -
+                            <a href="https://github.com/mdamyanova/Java-Teamwork-Project" class="link" target="_blank">Memory Game</a>
+                        </b>
+                        - design the cards, backgrounds, functionality of the game
+                    </li>
+                    <li>
+                        <b>Unity 3d February 2016 -
+                            <a href="https://github.com/EvgeniYorgakiev/Unity-team-project" class="link" target="_blank">Programmer's Dream</a>
+                        </b>
+                        - idea, design and functionality of the Menu Scene
+                    </li>
+                    <li>
+                        <b>Software Technologies June 2016 -
+                            <a href="https://github.com/mdamyanova/SoftwareTechnologies-Teamwork-Project" class="link" target="_blank">bYte me</a>
+                        </b>
+                        - short story - everything
+                    </li>
+                    <li>
+                        <b>JavaScript Applications November 2016 -
+                            <a href="https://github.com/lubomirv999/Tech-Talks" class="link" target="_blank">Tech Talks</a>
+                        </b>
+                        - functionality of the non-ReactJs version
+                    </li>
+                    <li>
+                        <b>Databases Advanced February 2017 -
+                            <a href="https://github.com/lubomirv999/EverydayJournal" class="link" target="_blank">Everyday Journal</a>
+                        </b>
+                        - idea, design and functionality of databases
+                    </li>
+                    <li>
+                        <b>Practical Teamwork September 2017 -
+                            <a href="https://github.com/mdamyanova/Chatche-Live-Chat" class="link" target="_blank">Chatche - Live chat</a>
+                        </b>
+                        - everything about UI Prototyping;
+                        <b>
+                            <a href="https://github.com/Supbads/List-Processing-Teamwork" class="link" target="_blank">List Processing</a>
+                        </b>
+                        - simple project to get to know the project tracking tools, which we decided to make it very object-oriented
+                    </li>
+                    <li>
+                        <b>C# MVC Frameworks - ASP.NET Core - October 2017 - TODO: Self-made project</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="images">
+                <h3></h3>
+                <div class="img-fluid"></div>
+                <div class="row no-gutters">
+                <div class="col-sm-6">
+                        <a href="https://github.com/mdamyanova/Java-Teamwork-Project" target="_blank">
+                            <div>
+                                <img src="assets/images/projects/memory-game-1.jpg" alt="memory game" class="img-fluid project">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="https://github.com/mdamyanova/Java-Teamwork-Project" target="_blank">
+                            <div>
+                                <img src="assets/images/projects/memory-game-2.jpg" alt="memory game" class="img-fluid project">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="https://github.com/EvgeniYorgakiev/Unity-team-project" target="_blank">
+                            <div>
+                                <img src="assets/images/projects/programmers-dream-1.jpg" alt="programmer's dream" class="img-fluid project">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="https://github.com/EvgeniYorgakiev/Unity-team-project" target="_blank">
+                            <div>
+                                <img src="assets/images/projects/programmers-dream-4.jpg" alt="programmer's dream" class="img-fluid project">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="https://github.com/mdamyanova/SoftwareTechnologies-Teamwork-Project" target="_blank">
+                            <div>
+                                <img src="assets/images/projects/bYte-me-1.jpg" alt="bYte me" class="img-fluid  project">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="https://github.com/mdamyanova/SoftwareTechnologies-Teamwork-Project" target="_blank ">
+                            <div>
+                                <img src="assets/images/projects/bYte-me-2.jpg" alt="bYte me" class="img-fluid project">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="images">
-            <h3></h3>
-            <div class="img-fluid"></div>
-            <div class="row no-gutters">
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="assets/images/projects/memory-game-1.jpg" alt="memory game" class="img-fluid">
-                        <div class="overlay">
-                            <h2>memory game</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="assets/images/projects/memory-game-2.jpg" alt="memory game" class="img-fluid">
-                        <div class="overlay">
-                            <h2>memory game</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="assets/images/projects/programmers-dream-1.jpg" alt="programmer's dream" class="img-fluid">
-                        <div class="overlay">
-                            <h2>programmer's dream</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="assets/images/projects/programmers-dream-4.jpg" alt="programmer's dream" class="img-fluid">
-                        <div class="overlay">
-                            <h2>programmer's dream</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="assets/images/projects/bYte-me-1.jpg" alt="bYte me" class="img-fluid">
-                        <div class="overlay">
-                            <h2>bYte me</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="hovereffect">
-                        <img src="assets/images/projects/bYte-me-2.jpg" alt="bYte me" class="img-fluid">
-                        <div class="overlay">
-                            <h2>bYte me</h2>
-                        </div>
-                    </div>
-                </div>
+        <div class="content animated fadeIn">
+            <div class="col-centered text-projects">
+                <p><b>Jumping Dude</b> is C#-based Windows Forms game, with two heroes: The Dude and the enemy - Sonic.
+                The goal of the game is to reach the Diamond on the top of the screen by avoiding getting caught by
+                the enemy. <b>Memory Game</b> is a card-matching game with three themes and levels, which can be
+                chosen by the user. We used Java and Swing. In <b>Programmer's Dream</b> you can run endlessly and collect
+                1 and 0 through the Programmer's World. <b>bYte me</b> is a date site for programmers. Every user has profile
+                with likes and dislikes, and depending on the count of dislikes you can order rewards.
+                For this project I used C#, APS.NET MVC, Entity Framework, SQL Server, HTML and CSS.
+                <br/>
+                <b>Tech Talks</b> is JavaScript and ReactJs-based blog, when users can add posts and read other's posts. And finally,
+                <b>Everyday Journal</b> is an online diary for people who are obsessed with healthy living. They can traverse
+                through days, write what they've consumed or their tasks for the day. In the <b>Practical Teamwork course</b> I had 3
+                different small task and 1 project with different teams. We worked with Git and source control systems, we
+                learned how to make a UI Prototyping for given web application and get to know what are these project tracking tools.</p>
             </div>
         </div>
-    </div>
-</main>
-<footer>
-    <p class="container-fluid"><b>ella</b> by Mirela &copy;</p>
-</footer>
-    <!--jQuery-->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-            crossorigin="anonymous"></script>
-
-    <!--latest compiled and minified JavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-            crossorigin="anonymous"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-            crossorigin="anonymous"></script>
-
-    <!--pagepiling minified JavaScript-->
-    <script type="text/javascript" src="./vendors/PagePiling/jquery.pagepiling.min.js"></script>
-
-    <!--instagram widget script-->
-    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-
-    <!--page script-->
-    <script src="assets/scripts/app.js"></script>
+    </main>
+    <footer>
+        <p class="container-fluid"><b>ella</b> by Mirela &copy;</p>
+    </footer>
 </body>
 </html>
+<script src="assets/scripts/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="gadgets/aos/dist/aos.js"></script>
+<script src="gadgets/scrolling-nav/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="gadgets/scrolling-nav/js/scrolling-nav.js"></script>

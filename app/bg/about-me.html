@@ -1,212 +1,187 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>ella</title>
-
-    <!--normalize.css-->
-    <link rel="stylesheet" href="../vendors/normalize/normalize.css">
-
-    <!--latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../gadgets/normalize/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
           crossorigin="anonymous">
-
-    <!--font awesome for contact icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--pagepiling.js-->
-    <link rel="stylesheet" type="text/css" href="../vendors/page-piling/jquery-pagepiling.css" />
-
-    <!--styling-->
-    <link rel="stylesheet" href="../assets/styles/about-me.css">
-
-    <!--image hover gallery style-->
+    <link rel="stylesheet" href="../gadgets/aos/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/styles/style.css">
     <link rel="stylesheet" href="../assets/styles/images-gallery.css">
-
-    
+    <link rel="stylesheet" href="../gadgets/scrolling-nav/css/scrolling-nav.css">
 </head>
 <body>
-<nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded" id="target-nav">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded" id="nav-bar-ella">
 
-    <!--nice grouped look for mobile screen-->
-    <div class="navbar-header">
-        <button class="navbar-toggler navbar-toggler-right"
-                type="button" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">ella<span class="hearts">*</span></a>
-    </div>
+        <!--collapse the nav-bar for small screens-->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">ella<span class="hearts">*</span></a>
+            <button class="navbar-toggler navbar-toggler-right"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#nav-bar-items"
+                    aria-controls="nav-bar-items"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
-    <div class="collapse navbar-collapse justify-content-end" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="about-me.html">за мен</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="miscellaneous.html">разни</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" target="_blank" href="http://github.com/mdamyanova">github</a>
-            </li>
-            <li class="nav-item">
-                <a  class="nav-link" href="mailto:mdamyanova181@gmail.com">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a  class="nav-link" href="../about-me.html">
-                    <i class="fa fa-language" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
-</nav>
-<main>
-    <div class="container-fluid">
-        <h2 class="title-intro text-center">коя съм аз</h2>
-
-        <div class="row">
-            <div class="col-sm-6 col-lg-6 text-me">
-                <h3 class="keywords text-center">българка, програмист, мечтател</h3>
-                <div class="text-center">
-                    <a class="fa-contact-screen" href="mailto:mdamyanova181@gmail.com">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                    <a class="fa-contact-screen" target="_blank" href="https://www.linkedin.com/in/mdamyanova">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a class="fa-contact-screen" target="_blank" href="https://github.com/mdamyanova">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a class="fa-contact-screen" target="_blank" href="https://www.facebook.com/mirela95">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a class="fa-contact-screen" target="_blank" href="http://instagram.com/mirelkabachkadosta">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <a class="fa-contact-screen" target="_blank" href="https://www.pinterest.com/mdamyanova181">
-                        <i class="fa fa-pinterest" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <p class="paragraph">
-                    Здравей! Казвам се <span class="name">Мирела Дамянова</span>. От България, родена на 25 юли 1995 година.
-                    Страстта ми към компютрите е откакто се помня. Притежавах първия си компютър през 2000 година, когато бях на 5.
-                    Така започна всичко. Най-много ми харесваше да играя игри, когато през 2009 година имах първата си връзка у дома с Интернет.
-                    Тогава прекарах няколко безсънни нощи и нерви, пишейки и учейки HTML.
-                </p>
-                <p class="paragraph">
-                    Завърших гимназия през 2014 година. Веднага след това започнах да уча Психология във Великотърновския университет "Св. св. Кирил
-                    и Методий". Но след година открих Софтуерния Университет и реших да му дам шанс. През август 2015 година взех приемния изпит
-                    и станах част от едно от най-готините общества, които познавам. Прекъснах обучението си във Велико Търново през 2017.
-                </p>
-
-                <p class="paragraph">
-                    И сега, след три години учене и програмиране, това съм аз. Едно обикновено момиче с големи амбиции да бъде по-добър човек.
-                    C#, Ливърпул фен и любител на котките. Също така обичам да излизам с приятели, да пием по една (две, три...) бири,
-                    да си почиваме или да създаваме луди спомени.
-                    Това съм аз. Радвам се да се запознаем!
-                </p>
-                    <ol>
-                        Курсове в СофтУни:
-                        <li>
-                            Programming Basics - Юли 2015
-                        </li>
-                        <li>
-                            Teamwork and Personal Skills - Септември 2015
-                        </li>
-                        <li>
-                            Java Fundamentals - Октомври 2015
-                        </li>
-                        <li>
-                            Advanced C# - Септември 2015
-                        </li>
-                        <li>
-                            Object-Oriented Programming (C#) - Ноември 2015
-                        </li>
-                        <li>
-                            High-Quality Code (C#) - Декември 2015
-                        </li>
-                        <li>
-                            Python Programming - Януари 2016
-                        </li>
-                        <li>
-                            Unity 3D - Февруари 2016
-                        </li>
-                        <li>
-                            Programming Fundamentals - Май 2016
-                        </li>
-                        <li>
-                            Software Technologies - Юни 2016
-                        </li>
-                        <li>
-                            JavaScript Fundamentals - Септември 2016
-                        </li>
-                        <li>
-                            JavaScript Advanced - Октомври 2016
-                        </li>
-                        <li>
-                            JavaScript Applications - Ноември 2016
-                        </li>
-                        <li>
-                            Databases Basics - MS SQL Server - Януари 2017
-                        </li>
-                        <li>
-                            Databases Advanced - Entity Framework - Февруари 2017
-                        </li>
-                        <li>
-                            C# Advanced - Май 2017
-                        </li>
-                        <li>
-                            C# Object-Oriented Programming Basics - Юни 2017
-                        </li>
-						<li>
-							C# Object-Oriented Programmind Advanced - Юли 2017
-						</li>
-						<li>
-							C# Web Development Basics - Септември 2017
-						</li>
-                        <li>
-                            Practical Teamwork - Септември 2017
-                        </li>
-                        <li>
-                            C# MVC Frameworks - ASP.NET Core - Октомври 2017
-                        </li>
-                    </ol>
+        <!--the actual nav-bar-->
+        <div class="collapse navbar-collapse justify-content-end" id="nav-bar-items">
+            <ul class="nav navbar-nav navbar-small">
+                <li class="nav-item"><a class="nav-link" href="index.html">начало</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="http://github.com/mdamyanova">github</a></li>
+                <li class="nav-item"><a class="nav-link" href="mailto:mdamyanova181@gmail.com"><i class="fa fa-envelope-o" aria-hidden="false"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="../about-me.html"><i class="fa fa-language" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="animated fadeIn" id="section-one">
+            <a id="home" class="smooth"></a>
+            <div class="image-feature-about-me">
             </div>
-            <div class="col-sm-6 col-lg-4 big-picture">
-                <img class="img-fluid big-photo" src="../assets/images/me/me-big-photo.jpg" alt="my photo">
+            <div class="container-fluid">
+                <h2 class="title-intro text-center">Коя съм аз</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4 class="keywords text-center">българка, програмист, мечтател</h4>
+                        <div class="text-center">
+                            <a class="fa-contact-screen" href="mailto:mdamyanova181@gmail.com">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            <a class="fa-contact-screen" target="_blank" href="https://www.linkedin.com/in/mdamyanova">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a class="fa-contact-screen" target="_blank" href="https://github.com/mdamyanova">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="fa-contact-screen" target="_blank" href="https://www.facebook.com/mirela95">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a class="fa-contact-screen" target="_blank" href="http://instagram.com/mirelkabachkadosta">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a class="fa-contact-screen" target="_blank" href="https://www.pinterest.com/mdamyanova181">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <p class="paragraph">
+                            Здравей! Казвам се <span class="name">Мирела Дамянова</span>. От България, родена на 25 юли 1995 година.
+                            Страстта ми към компютрите е откакто се помня. Притежавах първия си компютър през 2000 година, когато бях на 5.
+                            Така започна всичко. Най-много ми харесваше да играя игри, когато през 2009 година имах първата си връзка у дома с Интернет.
+                            Тогава прекарах няколко безсънни нощи и нерви, пишейки и учейки HTML.
+                        </p>
+                        <p class="paragraph">
+                            Завърших гимназия през 2014 година. Веднага след това започнах да уча Психология във Великотърновския университет "Св. св. Кирил
+                            и Методий". Но след година открих Софтуерния Университет и реших да му дам шанс. През август 2015 година взех приемния изпит
+                            и станах част от едно от най-готините общества, които познавам. Прекъснах обучението си във Велико Търново през 2017.
+                        </p>
+
+                        <p class="paragraph">
+                            И сега, след три години учене и програмиране, това съм аз. Едно обикновено момиче с големи амбиции да бъде по-добър човек.
+                            C#, Ливърпул фен и любител на котките. Също така обичам да излизам с приятели, да пием по една (две, три...) бири,
+                            да си почиваме или да създаваме луди спомени.
+                            Това съм аз. Радвам се да се запознаем!
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 big-picture">
+                        <img class="img-fluid big-photo" src="../assets/images/me/me-big-photo.jpg" alt="my photo">
+                    </div>
+                    <div class="col-sm-5 list">
+                        <ol>
+                            Курсове в СофтУни:
+                            <li>
+                                Programming Basics - Юли 2015
+                            </li>
+                            <li>
+                                Teamwork and Personal Skills - Септември 2015
+                            </li>
+                            <li>
+                                Java Fundamentals - Октомври 2015
+                            </li>
+                            <li>
+                                Advanced C# - Септември 2015
+                            </li>
+                            <li>
+                                Object-Oriented Programming (C#) - Ноември 2015
+                            </li>
+                            <li>
+                                High-Quality Code (C#) - Декември 2015
+                            </li>
+                            <li>
+                                Python Programming - Януари 2016
+                            </li>
+                            <li>
+                                Unity 3D - Февруари 2016
+                            </li>
+                            <li>
+                                Programming Fundamentals - Май 2016
+                            </li>
+                            <li>
+                                Software Technologies - Юни 2016
+                            </li>
+                            <li>
+                                JavaScript Fundamentals - Септември 2016
+                            </li>
+                            <li>
+                                JavaScript Advanced - Октомври 2016
+                            </li>
+                            <li>
+                                JavaScript Applications - Ноември 2016
+                            </li>
+                            <li>
+                                Databases Basics - MS SQL Server - Януари 2017
+                            </li>
+                            <li>
+                                Databases Advanced - Entity Framework - Февруари 2017
+                            </li>
+                            <li>
+                                C# Advanced - Май 2017
+                            </li>
+                            <li>
+                                C# Object-Oriented Programming Basics - Юни 2017
+                            </li>
+                            <li>
+                                C# Object-Oriented Programmind Advanced - Юли 2017
+                            </li>
+                            <li>
+                                C# Web Development Basics - Септември 2017
+                            </li>
+                            <li>
+                                Practical Teamwork - Септември 2017
+                            </li>
+                            <li>
+                                C# MVC Frameworks - ASP.NET Core - Октомври 2017
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-<footer>
-    <p class="container-fluid"><b>ella</b> by Mirela &copy;</p>
-</footer>
-<!--jQuery-->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-            crossorigin="anonymous"></script>
-
-    <!--latest compiled and minified JavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-            crossorigin="anonymous"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-            crossorigin="anonymous"></script>
-
-    <!--pagepiling minified JavaScript-->
-    <script type="text/javascript" src="../vendors/page-piling/jquery-pagepiling.min.js"></script>
-
-    <!--instagram widget script-->
-    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-
-    <!--page script-->
-    <script src="../assets/scripts/app.js"></script>
+    </main>
+    <footer>
+        <p class="container-fluid"><b>ella</b> by Mirela &copy;</p>
+    </footer>
 </body>
 </html>
+<script src="../assets/scripts/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="../gadgets/aos/dist/aos.js"></script>
+<script src="../gadgets/scrolling-nav/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../gadgets/scrolling-nav/js/scrolling-nav.js"></script>
