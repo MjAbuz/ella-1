@@ -24,7 +24,6 @@ html{
 }
 body {
     height: 100%;
-    overflow: scroll;
     font-family: "Evolventa-Regular", sans-serif;
 }
 html, body{
@@ -227,6 +226,9 @@ h6{
 .col-centered{
     margin:0 auto;
     width:800px;
+}
+.col-left{
+   margin-left: 100px;
 }
 .link{
     color: #585858;
